@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeremy Hefti - Front-end Developer</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Pages/CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
+
 <body>
-  <div class="Home">
-    <div class="FrontEndDeveloper">Front-end Developer</div>
-    <div class="JeremyHefti">Jeremy Hefti</div>
-    <div class="HiIAm">Hi, I am</div>
-    <div class="Rectangle67"></div>
-    <img class="Image17" src="https://via.placeholder.com/783x877" />
-    <div class="Navbar">
-      <div class="Rectangle4"></div>
-      <a href="contact.html" class="ContactMe">CONTACT ME</a>
-      <a href="portfolio.html" class="Portfolio">Portfolio</a>
-      <a href="about.html" class="AboutMe">About me</a>
-      <a href="skills.html" class="Skills">Skills</a>
+    <nav>
+        <div class="burger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul id="menu" class="hidden">
+            <li><a href="/">Home</a></li>
+            <li><a href="/Pages/about.html">About</a></li>
+            <li><a href="#section3">Projects</a></li>
+            <li><a href="#section4">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img class="portrait" src="../assests/jöremporti.png" alt="Portait">
     </div>
-  </div>
+    <div class="bottom-left">
+        <h1>Hi, I am</h1>
+        <h1>Jeremy Hefti</h1>
+        <h1>Front-end Developer</h1>
+    </div>
+
+   
+
+    <div class="Icon-container">
+        <img src="../assests/discord.svg" alt="discord-logo">
+        <img src="../assests/instagram.svg" alt="instagram-logo">
+        <img src="../assests/github.svg" alt="github-logo">
+
+    </div>
+    
+    <script src="./Pages/index.js"></script>
+
 </body>
+
 </html>
