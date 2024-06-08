@@ -4,70 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/about.css">
+    <link rel="stylesheet" href="./CSS/aboutDesktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./CSS/about.css" media="(max-width: 767px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 
 <body>
     <nav>
-        <div class="burger" onclick="toggleMenu()">
-            &#9776;
-        </div>
+        <div class="burger" onclick="toggleMenu()">&#9776;</div>
         <ul id="menu" class="hidden">
-            <li><a href="/">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#section3">Projects</a></li>
-            <li><a href="#section4">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <h1>So, who am I?</h1>
-    <p>
-        My name is Jeremy Hefti.
-        I am currently in my first year of
-        training as a programmer, and I am
-        enjoying it very much. Apart from
-        programming, I have several other hobbies
-        that I am passionate about. I love playing
-        basketball, and I find it to be a great
-        way to stay active and competitive. I also
-        play the drums, which allows me to express
-        myself creatively through music.
-        Additionally, reading the Bible is an
-        important part of my life, as it provides
-        me with spiritual guidance and
-        inspiration. I am also involved in the
-        International Christian Fellowship (ICF),
-        where I can connect with like-minded
-        individuals and grow in my faith.
-        Overall, I am dedicated to my personal
-        and professional growth, and I look
-        forward to continuing my journey as a
-        programmer while nurturing my various
-        interests and hobbies.
-    </p>
-    <a href="contact.html" class="contact-link">
-        <div class="contact-button">
-            <div class="contact-text">Contact me</div>
-            <div class="contact-icon">
-                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 9L5 5L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
+    <div class="content-wrapper">
+        <div class="image-container">
+            <a href="https://www.icf.church/zuerich/de/">
+                <img src="../assests/icf.jpg" alt="icf-logo">
+            </a>
         </div>
-    </a>
-    
-    <div class="centered-content">
-        <img src="../assests/icf.jpg" alt="icf-logo">
+        <div class="text-container">
+            <h1>So, who am I?</h1>
+            <p>
+                My name is Jeremy Hefti.
+                I am currently in my first year of
+                training as a programmer, and I am
+                enjoying it very much. Apart from
+                programming, I have several other hobbies
+                that I am passionate about. I love playing
+                basketball, and I find it to be a great
+                way to stay active and competitive. I also
+                play the drums, which allows me to express
+                myself creatively through music.
+                Additionally, reading the Bible is an
+                important part of my life, as it provides
+                me with spiritual guidance and
+                inspiration. I am also involved in the
+                International Christian Fellowship (ICF),
+                where I can connect with like-minded
+                individuals and grow in my faith.
+                Overall, I am dedicated to my personal
+                and professional growth, and I look
+                forward to continuing my journey as a
+                programmer while nurturing my various
+                interests and hobbies.
+            </p>
+            <a href="./contact.html" class="contact-link">
+                <div class="contact-button">
+                    <div class="contact-text">Contact me</div>
+                    <div class="contact-icon">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div class="button-container">
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

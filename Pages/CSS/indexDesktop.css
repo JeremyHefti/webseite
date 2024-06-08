@@ -1,0 +1,120 @@
+body {
+    background-color: #94BDF2;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vh;
+    height: 350px;
+}
+
+h1, p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+}
+
+h1:first-child {
+    font-size: 20px;
+}
+
+h1:nth-child(2) {
+    font-size: 35px;
+}
+
+h1:nth-child(3) {
+    font-size: 20px;
+}
+
+
+.Icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    filter: invert();
+}
+
+.Icon-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-button {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    background: #0D65D9;
+    border-radius: 4px;
+    border: 1px #0D65D9 solid;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-text {
+    color: white;
+    font-size: 16px;
+    font-family: raleway;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin: 0 20px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+#menu li a:hover {
+    color: #94BDF2; 
+}

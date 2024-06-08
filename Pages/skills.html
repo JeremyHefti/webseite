@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Skills</title>
+    <link
+      rel="stylesheet"
+      href="./CSS/skillsDesktop.css"
+      media="(min-width: 768px)"
+    />
+    <link rel="stylesheet" href="./CSS/skills.css" media="(max-width: 767px)" />
+  </head>
+  <body>
+    <nav>
+      <div class="burger" onclick="toggleMenu()">&#9776;</div>
+      <ul id="menu" class="hidden">
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+ <div class="content-wrapper">
+    <h1>USING NOW:</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="../assests/icons8-figma.svg" alt="figma-svg" />
+        <p>Figma</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 85%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <img src="../assests/github.svg" alt="github" />
+        <p>Git</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+      </div>
+      <div class="skill">
+        <img src="../assests/icons8-js.svg" alt="js-svg" />
+        <p>JavaScript</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+      </div>
+    </div>
+
+    <h1>LEARNING:</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="../assests/icons8-react-native.svg" alt="react-svg" />
+        <p>React</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+      </div>
+      <div class="skill">
+        <img src="../assests/icons8-c.svg" alt="c-svg" />
+        <p>C/C++</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
