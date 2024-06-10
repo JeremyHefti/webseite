@@ -35,25 +35,22 @@
       </ul>
     </nav>
 
-    <div class="introText">
-      My name is Tomasz Gajda, I’m a third year Applied Computer Science student
-      at AGH University of Science and Technology in Cracow, Poland.
-    </div>
-    <div class="Contactformular">
-      <div class="Rectangle Rectangle50"></div>
-      <div class="Rectangle Rectangle51"></div>
-      <div class="Rectangle Rectangle52"></div>
-      <div class="Rectangle Rectangle53"></div>
-      <div class="Rectangle Rectangle54"></div>
-      <div class="Rectangle Rectangle55"></div>
-      <div class="Rectangle Rectangle56"></div>
-      <div class="Rectangle Rectangle57"></div>
-      <div class="EnterYourName">ENTER YOUR NAME*</div>
-      <div class="EnterYourEmail">ENTER YOUR EMAIL*</div>
-      <div class="PhoneNumber">PHONE NUMBER</div>
-      <div class="YourMessage">YOUR MESSAGE*</div>
-      <div class="Submit">SUBMIT</div>
-    </div>
+  
+    <div class="container">
+      <form class="contact-form">
+          <h2>Kontaktieren Sie uns</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Absenden</button>
+      </form>
+  </div>
 
     <script src="./js/index.js"></script>
   </body>

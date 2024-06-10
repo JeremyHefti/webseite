@@ -1,8 +1,10 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #94BDF2;
-    margin: 0;
     font-family: 'Raleway', sans-serif;
-    color: white;
 }
 
 nav {
@@ -39,154 +41,72 @@ nav {
     color: #94BDF2; 
 }
 
-.introText {
-    width: 313px;
-    height: 65px;
-    left: 35px;
-    top: 170px;
-    position: absolute;
-    text-align: center;
-    color: black;
-    font-size: 15px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    word-wrap: break-word;
+
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.Contactformular {
-    width: 360px;
-    height: 622.03px;
-    left: 8px;
-    top: 320px;
-    position: absolute;
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
-.Rectangle {
-    position: absolute;
-    background: #0456BD;
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
-.Rectangle50 {
-    width: 5.17px;
-    height: 49.60px;
-    left: 0px;
-    top: 0px;
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
 }
 
-.Rectangle51 {
-    width: 5.17px;
-    height: 360px;
-    left: 0px;
-    top: 49.60px;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-}
-
-.Rectangle52 {
-    width: 5.17px;
-    height: 49.60px;
-    left: 0px;
-    top: 104.36px;
-}
-
-.Rectangle53 {
-    width: 5.17px;
-    height: 360px;
-    left: 0px;
-    top: 153.96px;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-}
-
-.Rectangle54 {
-    width: 5.17px;
-    height: 49.60px;
-    left: 0px;
-    top: 208.72px;
-}
-
-.Rectangle55 {
-    width: 5.17px;
-    height: 360px;
-    left: 0px;
-    top: 258.32px;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-}
-
-.Rectangle56 {
-    width: 5.17px;
-    height: 190.12px;
-    left: 0px;
-    top: 321.35px;
-}
-
-.Rectangle57 {
-    width: 5.17px;
-    height: 360px;
-    left: 0px;
-    top: 511.47px;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-}
-
-.EnterYourName, .EnterYourEmail, .PhoneNumber, .YourMessage, .Submit {
-    position: absolute;
-    color: #F2F2F2;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.56px;
-    word-wrap: break-word;
-}
-
-.EnterYourName {
-    width: 213px;
-    height: 48px;
-    left: 15px;
-    top: 1px;
-}
-
-.EnterYourEmail {
-    width: 172px;
-    height: 47px;
-    left: 12px;
-    top: 106px;
-}
-
-.PhoneNumber {
-    width: 146px;
-    height: 46px;
-    left: 12px;
-    top: 211px;
-}
-
-.YourMessage {
-    width: 161px;
-    height: 48px;
-    left: 12px;
-    top: 321px;
-}
-
-.Submit {
-    width: 116.45px;
-    height: 46.50px;
-    left: 121.77px;
-    top: 575.53px;
-    text-align: center;
-    color: #0D65D9;
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 16px;
-    letter-spacing: 1.60px;
+    color: #333;
+    width: 100%;
 }
 
-.Group8 .Vector:nth-child(1) {
-    top: 0px;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
-.Group8 .Vector:nth-child(2) {
-    top: 9.31px;
+.contact-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.Group8 .Vector:nth-child(3) {
-    top: 18.53px;
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .contact-form h2 {
+        font-size: 20px;
+    }
 }
