@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./Pages/CSS/indexDesktop.css"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./Pages/CSS/index.css"
+      media="(max-width: 767px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="burger" onclick="toggleMenu()">&#9776;</div>
+      <ul id="menu" class="hidden">
+        <li><a href="./Pages/index.html">Home</a></li>
+        <li><a href="./Pages/about.html">About</a></li>
+        <li><a href="./Pages/skills.html">Skills</a></li>
+        <li><a href="./Pages/contact.html">Contact</a></li>
+        <li><a href="./Pages/portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <img
+        class="portrait"
+        src=".//assests/jöremporti.png"
+        alt="Portait"
+      />
+    </div>
+    <div class="bottom-left">
+      <h1>Hi, I am</h1>
+      <h1>Jeremy Hefti</h1>
+      <h1>Front-end Developer</h1>
+
+      <a href="./Pages/about.html" class="contact-link">
+        <div class="contact-button">
+            <div class="contact-text">Let's get started</div>
+            <div class="contact-icon">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </a>
+    </div>
+
+    
+
+    <div class="Icon-container">
+      <img src="./assests/discord.svg" alt="discord-logo" />
+      <img src="./assests/instagram.svg" alt="instagram-logo" />
+      <img src="./assests/github.svg" alt="github-logo" />
+    </div>
+
+    <script src="./Pages/js/index.js"></script>
+  </body>
+</html>
